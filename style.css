@@ -222,7 +222,7 @@ p {
 a {
     color: #000;
     text-decoration: none;
-    border-bottom: 1px solid #000
+    /* border-bottom: 1px solid #000 */
 }
 
 .highlight {
@@ -362,6 +362,10 @@ main>section {
     left: 0;
     width: 100%;
     z-index: 2
+}
+
+#nav a:hover {
+    color: #ffddbb;
 }
 
 @media only screen and (max-width:520px) {
@@ -583,12 +587,6 @@ main>section {
     color: #fff
 }
 
-#connect a {
-    vertical-align: middle;
-    border: none;
-    color: #fff
-}
-
 .hidden {
     visibility: hidden;
     height: 0
@@ -687,6 +685,15 @@ a.btn-header {
     letter-spacing: 2px;
     position: relative;
     overflow: hidden
+}
+
+.btn-header {
+    transition: transform .3s ease-in-out;
+    will-change: transform;
+}
+
+.btn-header:hover {
+    transform: translateZ(0) scale(1.2, 1.2);
 }
 
 @media only screen and (max-width:960px) {
@@ -934,12 +941,20 @@ a.btn-header span {
 }
 
 .connect {
-    font-size: 50px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
-.fa-linkedin {
+#connect .fa-stack-1x {
+    font-size: 50px;
+}
+
+#connect .fa-linkedin {
     color: #0a66c2;
+}
+
+#connect .fa-envelope-open-text {
+    font-size: 43px;
+    color: #bebebe;
 }
 
 .blurred {

@@ -9,12 +9,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" href="favicon.ico">
-  <script src="https://kit.fontawesome.com/121d1195fa.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/121d1195fa.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <title>David Lin</title>
-  <script src="script.js"></script>
-  <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"shimakaze",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
+  <script defer src="script.js"></script>
+  <script defer>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"shimakaze",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
       <div class="header-background"></div>
       <div class="container">
         <div class="landing-content">
-          <p>Hey there! I'm <span class="highlight">David Lin</span>.<br><span class="subheader">Aspiring Software Engineer</span></p><a class="btn btn-header"
+          <p>Hey there! I'm <span class="highlight">David Lin</span>.<br><span class="subheader"></span></p><a class="btn btn-header"
             href="#projects"><span>Check out my projects</span></a>
         </div>
       </div>
@@ -63,9 +63,9 @@
               <h5>Living CI/CD</h5>
               <p>Continuous integration of knowledge with continuous delivery of results &#128521;</p>
             </div>
-            <div class="about-item"><i class="fas fa-clipboard-check"></i>
-              <h5>git checkout -b dev</h5>
-              <p>A success story waiting to happen -- <a style="color:white;" href="mailto:hey@davidthe.dev">reach out</a> and let's talk</p>
+            <div class="about-item"><i class="fab fa-free-code-camp"></i>
+              <h5>Learning In Progress</h5>
+              <p>Current: The Odin Project (full stack JavaScript & Ruby on Rails)</p>
             </div>
           </div>
         </div>
@@ -242,14 +242,30 @@
   </main>
   <footer id="connect">
     <div class="container">
-      <span>Find me on:</span>
+      <span>Connect with me:</span>
       <div class="connect">
-        <a title="Connect with me!" href="https://www.linkedin.com/in/davidlin-/"><i class="fab fa-linkedin"></i></a>
-        <a title="Find me on GitHub!" href="https://github.com/zeka-mashi"><i class="fab fa-github-square"></i></a>
+        <a title="Connect with me on LinkedIn!" href="https://www.linkedin.com/in/davidlin-/">
+          <span class="fa-stack">
+            <i class="fas fa-square fa-stack-2x" style="color:white;"></i>
+            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a title="Find me on GitHub!" href="https://github.com/zeka-mashi">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x" style="color:white;"></i>
+            <i class="fab fa-github fa-stack-1x"></i>
+          </span>
+          </a>
+        <a title="Shoot me an email!" href="mailto:hey@davidthe.dev">
+          <span class="fa-stack">
+          <i class="fas fa-square fa-stack-2x" style="color:rgb(0, 0, 0);"></i>
+          <i class="fas fa-envelope-open-text fa-stack-1x"></i>
+        </span>
+        </a>
       </div>
       <div class="copyright"><small>David Lin <i class="far fa-copyright"></i> 2022</small></div>
     </div>
   </footer>
 </body>
-<script data-goatcounter="https://davidthedev.goatcounter.com/count" async src="count.js"></script>
+<script data-goatcounter="https://stats.davidthe.dev/count" async src="count.js"></script>
 </html>
